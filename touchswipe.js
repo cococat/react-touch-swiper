@@ -109,7 +109,7 @@ Touchswipe = (function(){
 					
 			},
 			pre : function(nostop){
-				var now = this.state.now,me = this,data = S.get(this.props.dataid);
+				var now = this.state.now,me = this;
 				animate.stop.call(this);
 				data._animateS = new Date;
 				if(data.x == (now-1)*data.width){

@@ -19771,10 +19771,8 @@
 					data.touchstate = "end"; //touch事件状态，start，move，end
 					var xd = data.touchmode.xs - data.x;
 					if (xd > 10 || xd < -(data.width * (data.config.length - 1))) {
-						console.log("pre", xd);
 						this.animatePre(true);
 					} else {
-						console.log("next", xd, data.width * data.config.length);
 						this.animateNext(true);
 					}
 					data._initState = true;
@@ -19821,7 +19819,6 @@
 							me.setState({ now: me.state.now + 1 });
 							data.x = now * data.width;
 						}
-						console.log(new Date() - data._animateS, data.config.speed);
 						clear("nextInterval", data.poll);
 						if (nostop) {
 							me.animateStart();
@@ -19836,8 +19833,7 @@
 			},
 			pre: function (nostop) {
 				var now = this.state.now,
-				    me = this,
-				    data = S.get(this.props.dataid);
+				    me = this;
 				animate.stop.call(this);
 				data._animateS = new Date();
 				if (data.x == (now - 1) * data.width) {
