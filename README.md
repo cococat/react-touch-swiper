@@ -1,5 +1,5 @@
 # react-touch-swiper
-### 基于react的swipe插件
+### 基于react的swipe插件-- for移动端
 
 [demo](http://htmlpreview.github.io/?https://github.com/cococat/react-touch-swiper/blob/master/demo.html)
 
