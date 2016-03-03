@@ -1,0 +1,39 @@
+.touchswipe{
+	position: relative;
+	width: 100%;
+}
+.touchswipe-main{
+	width: 100%;
+	box-sizing:border-box;
+	-webkit-transform: transition3d(0,0,0);
+	overflow: hidden;
+	z-index: 0;
+}
+.touchswipe-body{
+		height: 200px;
+	display: -webkit-box;
+	width: 100%;
+}
+.touchswipe-box{
+	width: 100%;
+	height: inherit;
+}
+.touchswipe-op{
+	position: absolute;
+	display: -webkit-box;
+	bottom: 10px;
+	left: 50%;
+	z-index: 1;
+	-webkit-transform: translateX(-50%);
+}
+.touchswipe-button{
+	width: 10px;
+	height: 10px;
+	-webkit-box-flex:1;
+	border-radius: 10px;
+	background: #000;
+	margin: 5px;
+}
+.touchswipe-button-cur{
+	background:#fff;
+}
