@@ -4,11 +4,13 @@
 [demo](http://htmlpreview.github.io/?https://github.com/cococat/react-touch-swiper/blob/master/demo.html)
 
 ###api说明
-| key        | value类型          | 说明  |默认值|
-| ------------- |:-------------:| -----:|
-| interval | Number  |swipe动画停留时间 |4000|
-| speed | Number | 默认轮播速度 | 400 |
-| now | Number | 从第几项开始轮播(第一项为1) | 1 |
+key        | value类型| 说明  |默认值|备注
+---------- |----------| -----|------|------
+height | String | swipe高度,eg:"245px" | 无 ｜必须
+interval | Number  |swipe动画停留时间 |4000|可选
+speed | Number | 默认轮播速度 | 400 |可选
+now | Number | 从第几项开始轮播(第一项为1) | 1 ｜可选
+
 
 ###用法举例
 ```javascript
